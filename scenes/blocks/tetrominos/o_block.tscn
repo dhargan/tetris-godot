@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://o0y2y0msxgmy"]
+
+[ext_resource type="PackedScene" uid="uid://ehrx7s0sy1ag" path="res://scenes/blocks/red_block.tscn" id="1_qt3mi"]
+
+[node name="OBlock" type="Node2D"]
+
+[node name="RedBlock" parent="." instance=ExtResource("1_qt3mi")]
+position = Vector2(16, 16)
+
+[node name="RedBlock2" parent="." instance=ExtResource("1_qt3mi")]
+position = Vector2(-16, 16)
+
+[node name="RedBlock3" parent="." instance=ExtResource("1_qt3mi")]
+position = Vector2(16, -16)
+
+[node name="RedBlock4" parent="." instance=ExtResource("1_qt3mi")]
+position = Vector2(-16, -16)
