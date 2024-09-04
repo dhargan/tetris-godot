@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://w15va18kevrb"]
+
+[ext_resource type="Texture2D" uid="uid://cxtrsy2yptoje" path="res://assets/images/blocks/pink_block.png" id="1_g01i1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftmpk"]
+size = Vector2(32, 32)
+
+[node name="PinkBlock" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ftmpk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g01i1")

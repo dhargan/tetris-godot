@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://rlblykp1e6w0"]
+
+[ext_resource type="Texture2D" uid="uid://cpv2ox7d63rx4" path="res://assets/images/blocks/purple_block.png" id="1_03ky0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftmpk"]
+size = Vector2(32, 32)
+
+[node name="PurpleBlock" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ftmpk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_03ky0")
