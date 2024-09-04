@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://ehrx7s0sy1ag" path="res://scenes/blocks/red_block.tscn" id="1_qt3mi"]
 
 [node name="OBlock" type="Node2D"]
-scale = Vector2(0.5, 0.5)
 
 [node name="RedBlock" parent="." instance=ExtResource("1_qt3mi")]
 position = Vector2(16, 16)
