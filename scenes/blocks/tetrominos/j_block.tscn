@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3vx7svjd85mn"]
+[gd_scene load_steps=3 format=3 uid="uid://d3vx7svjd85mn"]
 
 [ext_resource type="PackedScene" uid="uid://bp1g76nm8qy5f" path="res://scenes/blocks/blue_block.tscn" id="1_ijteb"]
+[ext_resource type="Script" path="res://scenes/blocks/tetrominos/tetromino.gd" id="1_nrvsc"]
 
 [node name="JBlock" type="Node2D"]
 rotation = 0.00583186
+script = ExtResource("1_nrvsc")
 
 [node name="BlueBlock" parent="." instance=ExtResource("1_ijteb")]
 position = Vector2(0, -16)

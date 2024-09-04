@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2x3jtjax6snb"]
+[gd_scene load_steps=3 format=3 uid="uid://d2x3jtjax6snb"]
 
+[ext_resource type="Script" path="res://scenes/blocks/tetrominos/tetromino.gd" id="1_f8ya2"]
 [ext_resource type="PackedScene" uid="uid://ehrx7s0sy1ag" path="res://scenes/blocks/red_block.tscn" id="1_ff0xm"]
 
 [node name="ZBlock" type="Node2D"]
+script = ExtResource("1_f8ya2")
 
 [node name="RedBlock" parent="." instance=ExtResource("1_ff0xm")]
 position = Vector2(-32, 16)

@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo3ye1rcslnxs"]
+[gd_scene load_steps=3 format=3 uid="uid://bo3ye1rcslnxs"]
 
 [ext_resource type="PackedScene" uid="uid://rlblykp1e6w0" path="res://scenes/blocks/purple_block.tscn" id="1_07m01"]
+[ext_resource type="Script" path="res://scenes/blocks/tetrominos/tetromino.gd" id="1_pljyl"]
 
 [node name="TBlock" type="Node2D"]
+script = ExtResource("1_pljyl")
 
 [node name="PurpleBlock" parent="." instance=ExtResource("1_07m01")]
 position = Vector2(32, 16)

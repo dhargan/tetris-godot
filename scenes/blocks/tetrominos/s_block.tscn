@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dk7ny5t1sainx"]
+[gd_scene load_steps=3 format=3 uid="uid://dk7ny5t1sainx"]
 
 [ext_resource type="PackedScene" uid="uid://dd0qvq10h88sm" path="res://scenes/blocks/green_block.tscn" id="1_h1hlj"]
+[ext_resource type="Script" path="res://scenes/blocks/tetrominos/tetromino.gd" id="1_qhni6"]
 
 [node name="SBlock" type="Node2D"]
+script = ExtResource("1_qhni6")
 
 [node name="GreenBlock" parent="." instance=ExtResource("1_h1hlj")]
 position = Vector2(0, 16)
