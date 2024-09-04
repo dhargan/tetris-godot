@@ -1,22 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://dl2yxr0husjpo"]
-
-[ext_resource type="PackedScene" uid="uid://o0y2y0msxgmy" path="res://scenes/blocks/tetrominos/o_block.tscn" id="1_btey4"]
+[gd_scene format=3 uid="uid://dl2yxr0husjpo"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="OBlock" parent="." instance=ExtResource("1_btey4")]
-position = Vector2(-64, 144)
-
-[node name="OBlock2" parent="." instance=ExtResource("1_btey4")]
-position = Vector2(-32, 144)
-
-[node name="OBlock3" parent="." instance=ExtResource("1_btey4")]
-position = Vector2(0, 144)
-
-[node name="OBlock4" parent="." instance=ExtResource("1_btey4")]
-position = Vector2(32, 144)
-
-[node name="OBlock5" parent="." instance=ExtResource("1_btey4")]
-position = Vector2(64, 144)
