@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3vx7svjd85mn"]
+
+[ext_resource type="PackedScene" uid="uid://bp1g76nm8qy5f" path="res://scenes/blocks/blue_block.tscn" id="1_ijteb"]
+
+[node name="JBlock" type="Node2D"]
+rotation = 0.00583186
+
+[node name="BlueBlock" parent="." instance=ExtResource("1_ijteb")]
+position = Vector2(0, -16)
+
+[node name="BlueBlock2" parent="." instance=ExtResource("1_ijteb")]
+position = Vector2(0, -48)
+
+[node name="BlueBlock3" parent="." instance=ExtResource("1_ijteb")]
+position = Vector2(0, 16)
+
+[node name="BlueBlock4" parent="." instance=ExtResource("1_ijteb")]
+position = Vector2(-32, 16)

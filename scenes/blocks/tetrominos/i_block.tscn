@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlcvlc11o7yh2"]
+
+[ext_resource type="PackedScene" uid="uid://cindy12c5yhix" path="res://scenes/blocks/cyan_block.tscn" id="1_kjgqh"]
+
+[node name="i_block" type="Node2D"]
+
+[node name="CyanBlock" parent="." instance=ExtResource("1_kjgqh")]
+position = Vector2(0, 16)
+
+[node name="CyanBlock2" parent="." instance=ExtResource("1_kjgqh")]
+position = Vector2(0, 48)
+
+[node name="CyanBlock3" parent="." instance=ExtResource("1_kjgqh")]
+position = Vector2(0, -48)
+
+[node name="CyanBlock4" parent="." instance=ExtResource("1_kjgqh")]
+position = Vector2(0, -16)

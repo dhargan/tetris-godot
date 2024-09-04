@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo3ye1rcslnxs"]
+
+[ext_resource type="PackedScene" uid="uid://rlblykp1e6w0" path="res://scenes/blocks/purple_block.tscn" id="1_07m01"]
+
+[node name="TBlock" type="Node2D"]
+
+[node name="PurpleBlock" parent="." instance=ExtResource("1_07m01")]
+position = Vector2(32, 16)
+
+[node name="PurpleBlock2" parent="." instance=ExtResource("1_07m01")]
+position = Vector2(0, 16)
+
+[node name="PurpleBlock3" parent="." instance=ExtResource("1_07m01")]
+position = Vector2(-32, 16)
+
+[node name="PurpleBlock4" parent="." instance=ExtResource("1_07m01")]
+position = Vector2(0, -16)

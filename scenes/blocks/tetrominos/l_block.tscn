@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0nuq5xkuw0li"]
+
+[ext_resource type="PackedScene" uid="uid://w15va18kevrb" path="res://scenes/blocks/pink_block.tscn" id="1_s5kla"]
+
+[node name="LBlock" type="Node2D"]
+
+[node name="PinkBlock" parent="." instance=ExtResource("1_s5kla")]
+position = Vector2(32, 16)
+
+[node name="PinkBlock2" parent="." instance=ExtResource("1_s5kla")]
+position = Vector2(0, 16)
+
+[node name="PinkBlock3" parent="." instance=ExtResource("1_s5kla")]
+position = Vector2(0, -48)
+
+[node name="PinkBlock4" parent="." instance=ExtResource("1_s5kla")]
+position = Vector2(0, -16)
