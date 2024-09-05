@@ -22,4 +22,4 @@ position = Vector2(0, -321)
 shape = SubResource("RectangleShape2D_1mgcm")
 
 [node name="OBlock" parent="." instance=ExtResource("1_s88d4")]
-position = Vector2(1, -286)
+position = Vector2(-127, -288)
