@@ -1,5 +1,25 @@
-[gd_scene format=3 uid="uid://dl2yxr0husjpo"]
+[gd_scene load_steps=3 format=3 uid="uid://dl2yxr0husjpo"]
+
+[ext_resource type="PackedScene" uid="uid://o0y2y0msxgmy" path="res://scenes/blocks/tetrominos/o_block.tscn" id="1_s88d4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgcm"]
+size = Vector2(320.5, 3)
 
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="FloorCollision" type="CollisionShape2D" parent="Floor"]
+position = Vector2(0, 321.5)
+shape = SubResource("RectangleShape2D_1mgcm")
+
+[node name="Ceiling" type="StaticBody2D" parent="."]
+
+[node name="CeilingCollision" type="CollisionShape2D" parent="Ceiling"]
+position = Vector2(0, -321)
+shape = SubResource("RectangleShape2D_1mgcm")
+
+[node name="OBlock" parent="." instance=ExtResource("1_s88d4")]
+position = Vector2(1, -286)
