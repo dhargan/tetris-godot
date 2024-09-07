@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://dl2yxr0husjpo"]
 
-[ext_resource type="PackedScene" uid="uid://o0y2y0msxgmy" path="res://scenes/blocks/tetrominos/o_block.tscn" id="1_s88d4"]
+[ext_resource type="PackedScene" uid="uid://c68yo64oqre4y" path="res://scenes/blocks/tetrominos/z_block.tscn" id="1_u3quk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgcm"]
-size = Vector2(320.5, 3)
+size = Vector2(320.5, 0.5)
 
 [node name="Main" type="Node2D"]
 
@@ -12,14 +12,15 @@ size = Vector2(320.5, 3)
 [node name="Floor" type="StaticBody2D" parent="."]
 
 [node name="FloorCollision" type="CollisionShape2D" parent="Floor"]
-position = Vector2(0, 321.5)
+position = Vector2(0, 319.75)
+scale = Vector2(0.99772, 0.997213)
 shape = SubResource("RectangleShape2D_1mgcm")
 
 [node name="Ceiling" type="StaticBody2D" parent="."]
 
 [node name="CeilingCollision" type="CollisionShape2D" parent="Ceiling"]
-position = Vector2(0, -321)
+position = Vector2(0, -320)
 shape = SubResource("RectangleShape2D_1mgcm")
 
-[node name="OBlock" parent="." instance=ExtResource("1_s88d4")]
-position = Vector2(-127, -288)
+[node name="ZBlock" parent="." instance=ExtResource("1_u3quk")]
+position = Vector2(-112, -288)

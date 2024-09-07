@@ -13,6 +13,9 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("move_left"):
 		move_left()
+		
+	if Input.is_action_just_pressed("switch"):
+		switch()
 	
 	
 func move_down(speed_up: bool, delta: float) -> void:
@@ -29,3 +32,6 @@ func move_right():
 	
 func move_left():
 	position.x -= 32
+	
+func switch():
+	rotate(deg_to_rad(90))
