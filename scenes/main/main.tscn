@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dl2yxr0husjpo"]
 
-[ext_resource type="PackedScene" uid="uid://c68yo64oqre4y" path="res://scenes/blocks/tetrominos/z_block.tscn" id="1_u3quk"]
+[ext_resource type="PackedScene" uid="uid://d0nuq5xkuw0li" path="res://scenes/blocks/tetrominos/l_block.tscn" id="1_beve8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgcm"]
 size = Vector2(320.5, 0.5)
@@ -22,5 +22,5 @@ shape = SubResource("RectangleShape2D_1mgcm")
 position = Vector2(0, -320)
 shape = SubResource("RectangleShape2D_1mgcm")
 
-[node name="ZBlock" parent="." instance=ExtResource("1_u3quk")]
-position = Vector2(-112, -288)
+[node name="LBlock" parent="." instance=ExtResource("1_beve8")]
+position = Vector2(-144, -272)

@@ -4,17 +4,16 @@
 [ext_resource type="Script" path="res://scenes/blocks/tetrominos/tetromino.gd" id="1_nrvsc"]
 
 [node name="JBlock" type="Node2D"]
-rotation = 0.00583186
 script = ExtResource("1_nrvsc")
 
 [node name="BlueBlock" parent="." instance=ExtResource("1_ijteb")]
-position = Vector2(0, -16)
+position = Vector2(-0.000549763, -32.0011)
 
 [node name="BlueBlock2" parent="." instance=ExtResource("1_ijteb")]
-position = Vector2(0, -48)
+position = Vector2(-0.000549763, -64.0011)
 
 [node name="BlueBlock3" parent="." instance=ExtResource("1_ijteb")]
-position = Vector2(0, 16)
+position = Vector2(-0.000549763, -0.00108528)
 
 [node name="BlueBlock4" parent="." instance=ExtResource("1_ijteb")]
-position = Vector2(-32, 16)
+position = Vector2(-32.0005, -0.00108528)

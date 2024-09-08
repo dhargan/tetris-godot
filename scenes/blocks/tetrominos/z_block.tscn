@@ -7,13 +7,12 @@
 script = ExtResource("1_f8ya2")
 
 [node name="RedBlock" parent="." instance=ExtResource("1_ff0xm")]
-position = Vector2(-32, 16)
+position = Vector2(-32, 0)
 
 [node name="RedBlock2" parent="." instance=ExtResource("1_ff0xm")]
-position = Vector2(32, -16)
+position = Vector2(32, -32)
 
 [node name="RedBlock3" parent="." instance=ExtResource("1_ff0xm")]
-position = Vector2(0, -16)
+position = Vector2(0, -32)
 
 [node name="RedBlock4" parent="." instance=ExtResource("1_ff0xm")]
-position = Vector2(0, 16)

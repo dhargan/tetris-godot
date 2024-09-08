@@ -7,13 +7,12 @@
 script = ExtResource("1_se4g5")
 
 [node name="PinkBlock" parent="." instance=ExtResource("1_s5kla")]
-position = Vector2(32, 16)
+position = Vector2(32, 32)
 
 [node name="PinkBlock2" parent="." instance=ExtResource("1_s5kla")]
-position = Vector2(0, 16)
+position = Vector2(0, 32)
 
 [node name="PinkBlock3" parent="." instance=ExtResource("1_s5kla")]
-position = Vector2(0, -48)
+position = Vector2(0, -32)
 
 [node name="PinkBlock4" parent="." instance=ExtResource("1_s5kla")]
-position = Vector2(0, -16)
