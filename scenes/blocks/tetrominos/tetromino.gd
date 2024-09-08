@@ -1,9 +1,10 @@
 extends Node2D
 
 const BASE_SPEED = 40.0
-const MAX_SPEED = 5000.0
+const MAX_SPEED = 400.0
 
 var current_speed = BASE_SPEED
+var is_static = false
 
 
 func _ready() -> void:
@@ -11,17 +12,18 @@ func _ready() -> void:
 		if block is StaticBody2D:
 			block.connect("block_collided", _on_block_collided)
 
-func _process(delta: float) -> void:
-	move_down(Input.is_action_pressed("move_down"), delta)
-	
-	if Input.is_action_just_pressed("move_right"):
-		move_right()
+func _physics_process(delta: float) -> void:
+	if not is_static:
+		move_down(Input.is_action_pressed("move_down"), delta)
 		
-	if Input.is_action_just_pressed("move_left"):
-		move_left()
-		
-	if Input.is_action_just_pressed("switch"):
-		switch()
+		if Input.is_action_just_pressed("move_right"):
+			move_right()
+			
+		if Input.is_action_just_pressed("move_left"):
+			move_left()
+			
+		if Input.is_action_just_pressed("switch"):
+			switch()
 		
 	
 func move_down(speed_up: bool, delta: float) -> void:
@@ -48,4 +50,5 @@ func switch():
 func _on_block_collided(collided_bodies):
 	for body in collided_bodies:
 		if body not in get_children():
-			print(body)
+			if body.name == 'Floor':
+				is_static = true
