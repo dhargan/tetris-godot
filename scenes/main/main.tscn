@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dl2yxr0husjpo"]
+[gd_scene load_steps=4 format=3 uid="uid://dl2yxr0husjpo"]
 
-[ext_resource type="PackedScene" uid="uid://d0nuq5xkuw0li" path="res://scenes/blocks/tetrominos/l_block.tscn" id="1_beve8"]
+[ext_resource type="PackedScene" uid="uid://c68yo64oqre4y" path="res://scenes/blocks/tetrominos/z_block.tscn" id="1_0qk5s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1mgcm"]
 size = Vector2(320.5, 0.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_harae"]
+size = Vector2(67.0469, 5.5)
+
 [node name="Main" type="Node2D"]
+
+[node name="ZBlock" parent="." instance=ExtResource("1_0qk5s")]
+position = Vector2(-112, -271)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -22,5 +28,19 @@ shape = SubResource("RectangleShape2D_1mgcm")
 position = Vector2(0, -320)
 shape = SubResource("RectangleShape2D_1mgcm")
 
-[node name="LBlock" parent="." instance=ExtResource("1_beve8")]
-position = Vector2(-144, -272)
+[node name="LeftWall" type="StaticBody2D" parent="."]
+
+[node name="LeftWallCollision" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(-161.75, -0.123049)
+rotation = 1.5708
+scale = Vector2(9.54922, 1)
+shape = SubResource("RectangleShape2D_harae")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(325, 0)
+
+[node name="RightWallCollision" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(-162.75, -0.123049)
+rotation = 1.5708
+scale = Vector2(9.54922, 1)
+shape = SubResource("RectangleShape2D_harae")

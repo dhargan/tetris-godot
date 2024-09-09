@@ -5,12 +5,18 @@ const MAX_SPEED = 400.0
 
 var current_speed = BASE_SPEED
 var is_static = false
+var is_leftmost = false
+var is_rightmost = false
 
 
 func _ready() -> void:
 	for block in get_children():
 		if block is StaticBody2D:
 			block.connect("block_collided", _on_block_collided)
+
+func _process(delta: float) -> void:
+	pass
+		
 
 func _physics_process(delta: float) -> void:
 	if not is_static:
@@ -36,19 +42,30 @@ func move_down(speed_up: bool, delta: float) -> void:
 
 
 func move_right():
-	position.x += 32
+	if not is_rightmost:
+		position.x += 32
+		is_leftmost = false
 	
 	
 func move_left():
-	position.x -= 32
+	if not is_leftmost:
+		position.x -= 32
+		is_rightmost = false
 	
 	
 func switch():
 	rotate(deg_to_rad(90))
 
 
-func _on_block_collided(collided_bodies):
+func _on_block_collided(collided_bodies):	
 	for body in collided_bodies:
 		if body not in get_children():
 			if body.name == 'Floor':
 				is_static = true
+				
+			if body.name == 'LeftWall':
+				is_leftmost = true
+				
+			if body.name == 'RightWall':
+				is_rightmost = true			
+				
