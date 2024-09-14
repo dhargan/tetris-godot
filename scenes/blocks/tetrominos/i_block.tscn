@@ -7,13 +7,12 @@
 script = ExtResource("1_bsheu")
 
 [node name="CyanBlock" parent="." instance=ExtResource("1_kjgqh")]
-position = Vector2(0, 16)
 
 [node name="CyanBlock2" parent="." instance=ExtResource("1_kjgqh")]
-position = Vector2(0, 48)
+position = Vector2(0, 32)
 
 [node name="CyanBlock3" parent="." instance=ExtResource("1_kjgqh")]
-position = Vector2(0, -48)
+position = Vector2(0, -64)
 
 [node name="CyanBlock4" parent="." instance=ExtResource("1_kjgqh")]
-position = Vector2(0, -16)
+position = Vector2(0, -32)
