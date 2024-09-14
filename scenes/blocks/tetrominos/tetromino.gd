@@ -14,9 +14,6 @@ func _ready() -> void:
 		if block is StaticBody2D:
 			block.connect("block_collided", _on_block_collided)
 
-func _process(delta: float) -> void:
-	pass
-		
 
 func _physics_process(delta: float) -> void:
 	if not is_static:
@@ -30,8 +27,8 @@ func _physics_process(delta: float) -> void:
 			
 		if Input.is_action_just_pressed("switch"):
 			switch()
-		
-	
+
+
 func move_down(speed_up: bool, delta: float) -> void:
 	if speed_up:
 		current_speed = MAX_SPEED
@@ -54,6 +51,8 @@ func move_left():
 	
 	
 func switch():
+	is_leftmost = false
+	is_rightmost = false
 	rotate(deg_to_rad(90))
 
 
@@ -67,5 +66,10 @@ func _on_block_collided(collided_bodies):
 				is_leftmost = true
 				
 			if body.name == 'RightWall':
-				is_rightmost = true			
+				is_rightmost = true
 				
+			if body.name == 'OuterLeftWall':
+				position.x += 32
+
+			if body.name == 'OuterRightWall':
+				position.x -= 32

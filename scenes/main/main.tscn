@@ -33,13 +33,31 @@ shape = SubResource("RectangleShape2D_1mgcm")
 [node name="LeftWallCollision" type="CollisionShape2D" parent="LeftWall"]
 position = Vector2(-161.75, -0.123049)
 rotation = 1.5708
-scale = Vector2(9.54922, 1)
+scale = Vector2(9.54922, 0.72)
+shape = SubResource("RectangleShape2D_harae")
+
+[node name="OuterLeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-4, 0)
+
+[node name="OuterLeftWallCollision" type="CollisionShape2D" parent="OuterLeftWall"]
+position = Vector2(-161.75, -0.123049)
+rotation = 1.5708
+scale = Vector2(9.54922, 0.72)
 shape = SubResource("RectangleShape2D_harae")
 
 [node name="RightWall" type="StaticBody2D" parent="."]
 position = Vector2(325, 0)
 
 [node name="RightWallCollision" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(-162.75, -0.123049)
+rotation = 1.5708
+scale = Vector2(9.54922, 1)
+shape = SubResource("RectangleShape2D_harae")
+
+[node name="OuterRightWall" type="StaticBody2D" parent="."]
+position = Vector2(330, 0)
+
+[node name="OuterRightWallCollision" type="CollisionShape2D" parent="OuterRightWall"]
 position = Vector2(-162.75, -0.123049)
 rotation = 1.5708
 scale = Vector2(9.54922, 1)
