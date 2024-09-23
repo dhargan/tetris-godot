@@ -1,0 +1,14 @@
+[gd_scene load_steps=9 format=3 uid="uid://bh5cipbi00x52"]
+
+[ext_resource type="Script" path="res://scenes/managers/tetromino_manager.gd" id="1_yjjpj"]
+[ext_resource type="PackedScene" uid="uid://dlcvlc11o7yh2" path="res://scenes/blocks/tetrominos/i_block.tscn" id="2_humn8"]
+[ext_resource type="PackedScene" uid="uid://d3vx7svjd85mn" path="res://scenes/blocks/tetrominos/j_block.tscn" id="3_oshrp"]
+[ext_resource type="PackedScene" uid="uid://d0nuq5xkuw0li" path="res://scenes/blocks/tetrominos/l_block.tscn" id="4_4vwh3"]
+[ext_resource type="PackedScene" uid="uid://o0y2y0msxgmy" path="res://scenes/blocks/tetrominos/o_block.tscn" id="5_8xxhy"]
+[ext_resource type="PackedScene" uid="uid://dk7ny5t1sainx" path="res://scenes/blocks/tetrominos/s_block.tscn" id="6_05elo"]
+[ext_resource type="PackedScene" uid="uid://bo3ye1rcslnxs" path="res://scenes/blocks/tetrominos/t_block.tscn" id="7_s7qmi"]
+[ext_resource type="PackedScene" uid="uid://c68yo64oqre4y" path="res://scenes/blocks/tetrominos/z_block.tscn" id="8_h4nre"]
+
+[node name="TetrominoManager" type="Node2D"]
+script = ExtResource("1_yjjpj")
+tetrominos = Array[PackedScene]([ExtResource("2_humn8"), ExtResource("3_oshrp"), ExtResource("4_4vwh3"), ExtResource("5_8xxhy"), ExtResource("6_05elo"), ExtResource("7_s7qmi"), ExtResource("8_h4nre")])
